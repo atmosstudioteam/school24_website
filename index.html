@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Концепт оновленого сайту Херсонської спеціалізованої школи №24"
+    />
+    <title>Школа №24 — Херсон</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M6 21V7l6-4 6 4v14M9 10h1m4 0h1M9 14h1m4 0h1M10 21v-3h4v3" /></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M6 2v4m12-4v4M3 9h18M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2Z" /></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16h16V8Z" /><path d="M14 2v6h6M8 13h8M8 17h6" /></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8M5 10v11h14V10M9 21v-7h6v7" /></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></symbol>
+      <symbol id="i-news" viewBox="0 0 24 24"><path d="M4 5h13v14H4zM17 8h3v9a2 2 0 0 1-2 2h-1M7 9h7M7 13h7M7 16h4" /></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-3 2a14 14 0 0 0 6 6l2-3 5 2v4c0 1-1 2-2 2A16 16 0 0 1 3 5c0-1 1-2 2-2Z" /></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20 20-4-4" /></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" /></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></symbol>
+    </svg>
+
+    <a class="skip-link" href="#main-content">Перейти до вмісту</a>
+
+    <div class="utility-bar">
+      <div class="shell utility-inner">
+        <span>Херсонська спеціалізована школа І–ІІІ ступенів №24</span>
+        <div class="utility-links">
+          <a href="#contacts"><svg><use href="#i-phone" /></svg>(0552) 23-87-68</a>
+          <button class="language" type="button" aria-label="Мова сайту">UA</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#home" data-route="home" aria-label="Школа №24, головна">
+          <span class="brand-mark"><img src="assets/school-logo.png" alt="Емблема школи №24" /></span>
+          <span class="brand-copy"><strong>Школа №24</strong><small>Херсон</small></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Основна навігація">
+          <a href="#home" data-route="home" class="is-active">Головна</a>
+          <a href="#news" data-route="news">Новини</a>
+          <a href="#school" data-route="school">Про школу</a>
+          <a href="#education" data-route="education">Навчання</a>
+          <a href="#documents" data-route="documents">Документи</a>
+          <a href="#contacts" data-route="contacts">Контакти</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button" id="search-open" type="button" aria-label="Відкрити пошук">
+            <svg><use href="#i-search" /></svg>
+          </button>
+          <button class="menu-button" id="menu-open" type="button" aria-controls="mobile-menu" aria-expanded="false">
+            <svg><use href="#i-menu" /></svg><span>Меню</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobile-menu" aria-hidden="true">
+      <button class="drawer-backdrop" type="button" data-close-menu aria-label="Закрити меню"></button>
+      <div class="drawer-panel">
+        <div class="drawer-head">
+          <span>Навігація</span>
+          <button class="icon-button" type="button" data-close-menu aria-label="Закрити меню"><svg><use href="#i-x" /></svg></button>
+        </div>
+        <nav aria-label="Мобільна навігація">
+          <a href="#home" data-route="home"><svg><use href="#i-home" /></svg>Головна</a>
+          <a href="#news" data-route="news"><svg><use href="#i-news" /></svg>Новини</a>
+          <a href="#school" data-route="school"><svg><use href="#i-building" /></svg>Про школу</a>
+          <a href="#education" data-route="education"><svg><use href="#i-book" /></svg>Навчання</a>
+          <a href="#documents" data-route="documents"><svg><use href="#i-doc" /></svg>Документи</a>
+          <a href="#contacts" data-route="contacts"><svg><use href="#i-pin" /></svg>Контакти</a>
+        </nav>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <section class="page page-home is-active" data-page="home" aria-labelledby="home-title">
+        <div class="hero">
+          <div class="hero-photo" aria-hidden="true"></div>
+          <div class="shell hero-content">
+            <div class="hero-copy">
+              <span class="eyebrow">Знання • розвиток • спільнота</span>
+              <h1 id="home-title">Школа, де цікаво<br />пізнавати світ</h1>
+              <p>Поглиблене вивчення математики, фізики та англійської мови у дружньому освітньому середовищі.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#school" data-route="school">Дізнатися про школу <svg><use href="#i-arrow" /></svg></a>
+                <a class="button button-ghost" href="#contacts" data-route="contacts">Зв’язатися з нами</a>
+              </div>
+            </div>
+            <div class="hero-fact" aria-label="Коротка інформація">
+              <span class="fact-number">24</span>
+              <span class="fact-copy"><strong>школа з характером</strong><small>у серці Херсона</small></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="audience-strip">
+          <div class="shell audience-grid">
+            <a href="#education" data-route="education"><span class="audience-icon audience-blue"><svg><use href="#i-book" /></svg></span><span><small>інформація для</small><strong>Учнів</strong></span><svg class="link-arrow"><use href="#i-arrow" /></svg></a>
+            <a href="#documents" data-route="documents"><span class="audience-icon audience-gold"><svg><use href="#i-users" /></svg></span><span><small>інформація для</small><strong>Батьків</strong></span><svg class="link-arrow"><use href="#i-arrow" /></svg></a>
+            <a href="#school" data-route="school"><span class="audience-icon audience-cyan"><svg><use href="#i-building" /></svg></span><span><small>інформація для</small><strong>Учителів</strong></span><svg class="link-arrow"><use href="#i-arrow" /></svg></a>
+          </div>
+        </div>
+
+        <div class="shell content-layout">
+          <div class="content-column">
+            <section class="section-block" aria-labelledby="updates-title">
+              <div class="section-heading">
+                <div><span class="section-kicker">Будьте в курсі</span><h2 id="updates-title">Останні оголошення</h2></div>
+                <a class="text-link" href="#news" data-route="news">Усі новини <svg><use href="#i-arrow" /></svg></a>
+              </div>
+              <div class="featured-notice">
+                <div class="notice-date"><span>10</span><small>листопада</small></div>
+                <div class="notice-copy"><span class="tag tag-gold">Важливо</span><h3>Прийом документів до першого класу</h3><p>Коротка інформація про запис і перелік необхідних документів. Повний текст винесено на окрему сторінку.</p><a href="#article" data-route="article">Читати оголошення <svg><use href="#i-arrow" /></svg></a></div>
+              </div>
+              <div class="news-grid">
+                <article class="news-card"><div class="card-image image-season image-autumn"><span class="tag">Шкільне життя</span></div><div class="card-body"><time datetime="2021-10-18">18 жовтня 2021</time><h3>Осінній тиждень науки</h3><p>Події, досліди та відкриття учнів нашої школи.</p><a href="#article" data-route="article" aria-label="Докладніше про тиждень науки">Докладніше <svg><use href="#i-arrow" /></svg></a></div></article>
+                <article class="news-card"><div class="card-image image-season image-spring"><span class="tag">Досягнення</span></div><div class="card-body"><time datetime="2021-09-27">27 вересня 2021</time><h3>Наші перемоги та здобутки</h3><p>Вітаємо учнів і вчителів з новими результатами.</p><a href="#article" data-route="article" aria-label="Докладніше про досягнення">Докладніше <svg><use href="#i-arrow" /></svg></a></div></article>
+              </div>
+            </section>
+
+            <section class="section-block facts-section" aria-labelledby="school-today-title">
+              <div class="section-heading"><div><span class="section-kicker">Коротко про нас</span><h2 id="school-today-title">Школа сьогодні</h2></div></div>
+              <div class="facts-grid">
+                <div><strong>3</strong><span>профільні напрями</span></div>
+                <div><strong>1–11</strong><span>класи навчання</span></div>
+                <div><strong>30+</strong><span>років традицій</span></div>
+                <div><strong>∞</strong><span>можливостей зростати</span></div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="sidebar" aria-label="Додаткова навігація">
+            <section class="sidebar-card quick-card">
+              <div class="sidebar-heading"><span class="sidebar-icon"><svg><use href="#i-book" /></svg></span><div><small>Корисні розділи</small><h2>Швидкий доступ</h2></div></div>
+              <nav class="quick-links">
+                <a href="#education" data-route="education"><span>Освітній процес</span><svg><use href="#i-arrow" /></svg></a>
+                <a href="#documents" data-route="documents"><span>Правила прийому</span><svg><use href="#i-arrow" /></svg></a>
+                <a href="#documents" data-route="documents"><span>Фінансові звіти</span><svg><use href="#i-arrow" /></svg></a>
+                <a href="#school" data-route="school"><span>Гуртки та секції</span><svg><use href="#i-arrow" /></svg></a>
+                <a href="#contacts" data-route="contacts"><span>Соціально-психологічна служба</span><svg><use href="#i-arrow" /></svg></a>
+              </nav>
+              <details class="more-sections">
+                <summary>Інші розділи <svg><use href="#i-chevron" /></svg></summary>
+                <div><a href="#school" data-route="school">Історія школи</a><a href="#school" data-route="school">Шкільний парламент</a><a href="#education" data-route="education">Харчування</a><a href="#school" data-route="school">Наші партнери</a></div>
+              </details>
+            </section>
+
+            <section class="sidebar-card archive-card">
+              <div class="sidebar-heading"><span class="sidebar-icon"><svg><use href="#i-calendar" /></svg></span><div><small>Публікації за датою</small><h2>Архів</h2></div></div>
+              <div class="archive-list">
+                <details open><summary><span>2022</span><small>2 місяці</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news" data-route="news">Лютий <span>4</span></a><a href="#news" data-route="news">Січень <span>6</span></a></div></details>
+                <details><summary><span>2021</span><small>11 місяців</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news" data-route="news">Грудень <span>3</span></a><a href="#news" data-route="news">Листопад <span>5</span></a><a href="#news" data-route="news">Жовтень <span>8</span></a><a href="#news" data-route="news">Вересень <span>7</span></a></div></details>
+                <details><summary><span>2020</span><small>10 місяців</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news" data-route="news">Листопад <span>2</span></a><a href="#news" data-route="news">Жовтень <span>4</span></a><a href="#news" data-route="news">Серпень <span>3</span></a></div></details>
+                <details><summary><span>2019–2016</span><small>старіші записи</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news" data-route="news">Переглянути весь архів</a></div></details>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page inner-page" data-page="news" aria-labelledby="news-title">
+        <div class="page-banner banner-news"><div class="shell"><span class="eyebrow">Події та оголошення</span><h1 id="news-title">Шкільні новини</h1><p>Усе важливе — коротко, зрозуміло і в одному місці.</p></div></div>
+        <div class="shell inner-layout">
+          <div class="inner-main">
+            <div class="toolbar"><div class="filter-tabs"><button class="is-active" type="button">Усі</button><button type="button">Оголошення</button><button type="button">Події</button><button type="button">Досягнення</button></div><label class="select-wrap"><span class="sr-only">Рік</span><select><option>2022 рік</option><option>2021 рік</option><option>2020 рік</option></select><svg><use href="#i-chevron" /></svg></label></div>
+            <div class="news-list">
+              <article><div class="list-date"><strong>14</strong><span>лют</span></div><div><span class="tag tag-blue">Оголошення</span><h2>Організація освітнього процесу</h2><p>Короткий анонс матеріалу замість повного документа на головній сторінці.</p><a href="#article" data-route="article">Відкрити публікацію <svg><use href="#i-arrow" /></svg></a></div></article>
+              <article><div class="list-date"><strong>02</strong><span>лют</span></div><div><span class="tag tag-gold">Важливо</span><h2>Інформація для батьків та учнів</h2><p>Необхідні оновлення та посилання на повні матеріали.</p><a href="#article" data-route="article">Відкрити публікацію <svg><use href="#i-arrow" /></svg></a></div></article>
+              <article><div class="list-date"><strong>27</strong><span>січ</span></div><div><span class="tag">Шкільне життя</span><h2>Наші події у фотографіях</h2><p>Добірка моментів зі шкільного життя та навчальних проєктів.</p><a href="#article" data-route="article">Відкрити публікацію <svg><use href="#i-arrow" /></svg></a></div></article>
+            </div>
+          </div>
+          <aside class="inner-aside">
+            <section class="sidebar-card archive-card compact"><div class="sidebar-heading"><span class="sidebar-icon"><svg><use href="#i-calendar" /></svg></span><div><small>Публікації</small><h2>Архів новин</h2></div></div><div class="archive-list"><details open><summary><span>2022</span><small>10 записів</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news">Лютий <span>4</span></a><a href="#news">Січень <span>6</span></a></div></details><details><summary><span>2021</span><small>42 записи</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news">Грудень <span>3</span></a><a href="#news">Листопад <span>5</span></a></div></details><details><summary><span>2020</span><small>38 записів</small><svg><use href="#i-chevron" /></svg></summary><div><a href="#news">Переглянути</a></div></details></div></section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page inner-page" data-page="school" aria-labelledby="school-title">
+        <div class="page-banner banner-school"><div class="shell"><span class="eyebrow">Знайомство зі школою</span><h1 id="school-title">Про школу</h1><p>Історія, люди та цінності, які формують нашу спільноту.</p></div></div>
+        <div class="shell split-feature"><div class="feature-image image-summer" role="img" aria-label="Будівля школи"></div><div class="feature-copy"><span class="section-kicker">Наша візитівка</span><h2>Місце для знань і розвитку</h2><p>Школа спеціалізується на поглибленому вивченні математики, фізики та англійської мови. Замість довгого переліку в боковій панелі інформацію згруповано за зрозумілими темами.</p><div class="topic-grid"><a href="#school"><svg><use href="#i-clock" /></svg><span><strong>Історія школи</strong><small>Як усе починалося</small></span></a><a href="#school"><svg><use href="#i-users" /></svg><span><strong>Наша команда</strong><small>Адміністрація та вчителі</small></span></a><a href="#school"><svg><use href="#i-book" /></svg><span><strong>Традиції</strong><small>Цінності шкільної спільноти</small></span></a><a href="#school"><svg><use href="#i-building" /></svg><span><strong>Партнери</strong><small>Спільні освітні проєкти</small></span></a></div></div></div>
+      </section>
+
+      <section class="page inner-page" data-page="education" aria-labelledby="education-title">
+        <div class="page-banner banner-education"><div class="shell"><span class="eyebrow">Навчаємося разом</span><h1 id="education-title">Освітній процес</h1><p>Розклад, правила й корисні ресурси без інформаційного перевантаження.</p></div></div>
+        <div class="shell card-page-grid">
+          <a class="topic-card" href="#education"><span class="topic-number">01</span><svg><use href="#i-calendar" /></svg><h2>Структура навчального року</h2><p>Семестри, канікули та основні дати.</p><span class="topic-link">Переглянути <svg><use href="#i-arrow" /></svg></span></a>
+          <a class="topic-card" href="#education"><span class="topic-number">02</span><svg><use href="#i-clock" /></svg><h2>Розклад занять</h2><p>Час уроків для різних вікових груп.</p><span class="topic-link">Переглянути <svg><use href="#i-arrow" /></svg></span></a>
+          <a class="topic-card" href="#documents"><span class="topic-number">03</span><svg><use href="#i-doc" /></svg><h2>Правила прийому</h2><p>Умови зарахування та необхідні документи.</p><span class="topic-link">Переглянути <svg><use href="#i-arrow" /></svg></span></a>
+          <a class="topic-card" href="#education"><span class="topic-number">04</span><svg><use href="#i-users" /></svg><h2>Гуртки й секції</h2><p>Позашкільні заняття та можливості.</p><span class="topic-link">Переглянути <svg><use href="#i-arrow" /></svg></span></a>
+          <a class="topic-card" href="#education"><span class="topic-number">05</span><svg><use href="#i-book" /></svg><h2>Моніторинг якості</h2><p>Результати й навчальні досягнення.</p><span class="topic-link">Переглянути <svg><use href="#i-arrow" /></svg></span></a>
+          <a class="topic-card" href="#contacts"><span class="topic-number">06</span><svg><use href="#i-phone" /></svg><h2>Допомога й підтримка</h2><p>Контакти відповідальних спеціалістів.</p><span class="topic-link">Переглянути <svg><use href="#i-arrow" /></svg></span></a>
+        </div>
+      </section>
+
+      <section class="page inner-page" data-page="documents" aria-labelledby="documents-title">
+        <div class="page-banner banner-documents"><div class="shell"><span class="eyebrow">Відкрита інформація</span><h1 id="documents-title">Документи</h1><p>Положення, звіти та офіційні матеріали за категоріями.</p></div></div>
+        <div class="shell documents-layout">
+          <nav class="category-list" aria-label="Категорії документів"><button class="is-active" type="button">Усі документи <span>12</span></button><button type="button">Нормативні акти <span>4</span></button><button type="button">Фінансові звіти <span>3</span></button><button type="button">Правила прийому <span>2</span></button><button type="button">Моніторинг якості <span>3</span></button></nav>
+          <div class="document-list">
+            <article><span class="file-icon">PDF</span><div><small>Правила прийому • 2021</small><h2>Інформація про зарахування до 1-го класу</h2><span>2 сторінки · 640 КБ</span></div><button type="button" aria-label="Відкрити документ"><svg><use href="#i-arrow" /></svg></button></article>
+            <article><span class="file-icon">PDF</span><div><small>Фінансові звіти • 2021</small><h2>Звіт про використання бюджетних коштів</h2><span>4 сторінки · 1,2 МБ</span></div><button type="button" aria-label="Відкрити документ"><svg><use href="#i-arrow" /></svg></button></article>
+            <article><span class="file-icon">DOC</span><div><small>Освітній процес • 2021</small><h2>Структура 2021–2022 навчального року</h2><span>3 сторінки · 420 КБ</span></div><button type="button" aria-label="Відкрити документ"><svg><use href="#i-arrow" /></svg></button></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page inner-page" data-page="contacts" aria-labelledby="contacts-title">
+        <div class="page-banner banner-contacts"><div class="shell"><span class="eyebrow">Ми на зв’язку</span><h1 id="contacts-title">Контакти</h1><p>Усі способи зв’язку та адреса на одній сторінці.</p></div></div>
+        <div class="shell contact-layout">
+          <div class="contact-intro"><span class="section-kicker">Звертайтеся</span><h2>Будемо раді допомогти</h2><p>Оберіть зручний спосіб зв’язку. Години прийому та відповідальні особи можуть бути розміщені тут без пошуку в довгому меню.</p><div class="contact-items"><a href="tel:+380552238768"><span><svg><use href="#i-phone" /></svg></span><div><small>Телефон</small><strong>(0552) 23-87-68</strong></div></a><a href="mailto:school24@example.org"><span><svg><use href="#i-mail" /></svg></span><div><small>Електронна пошта</small><strong>school24@example.org</strong></div></a><div><span><svg><use href="#i-pin" /></svg></span><div><small>Адреса</small><strong>м. Херсон, Україна</strong></div></div></div></div>
+          <div class="map-placeholder"><div class="map-grid"></div><span class="map-pin"><svg><use href="#i-pin" /></svg></span><div class="map-label"><strong>Школа №24</strong><span>Херсон</span></div></div>
+        </div>
+      </section>
+
+      <section class="page inner-page article-page" data-page="article" aria-labelledby="article-title">
+        <div class="shell article-shell"><a class="back-link" href="#news" data-route="news"><svg><use href="#i-arrow" /></svg>До всіх новин</a><article><div class="article-meta"><span class="tag tag-gold">Важливо</span><time datetime="2021-11-10">10 листопада 2021</time></div><h1 id="article-title">Прийом документів до першого класу</h1><p class="article-lead">З 10 листопада розпочинається прийом документів на зарахування до 1-го класу на 2022–2023 навчальний рік.</p><div class="article-callout"><svg><use href="#i-phone" /></svg><div><small>Попередній запис за телефоном</small><strong>(0552) 23-87-68</strong></div></div><h2>Необхідні документи</h2><ol><li>Паспорт одного з батьків або законного представника.</li><li>Свідоцтво про народження дитини.</li><li>Заява встановленого зразка.</li></ol><p>Повна юридична інформація та територія обслуговування розміщуються у прикріпленому документі, а не перевантажують головну сторінку.</p></article></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div class="footer-brand"><a class="brand brand-light" href="#home" data-route="home"><span class="brand-mark"><img src="assets/school-logo.png" alt="" /></span><span class="brand-copy"><strong>Школа №24</strong><small>Херсон</small></span></a><p>Спеціалізована школа з поглибленим вивченням математики, фізики та англійської мови.</p></div>
+        <div><h2>Навігація</h2><a href="#school" data-route="school">Про школу</a><a href="#education" data-route="education">Навчання</a><a href="#news" data-route="news">Новини</a><a href="#documents" data-route="documents">Документи</a></div>
+        <div><h2>Корисне</h2><a href="#documents" data-route="documents">Правила прийому</a><a href="#documents" data-route="documents">Фінансові звіти</a><a href="#contacts" data-route="contacts">Психологічна служба</a><a href="#contacts" data-route="contacts">Мапа сайту</a></div>
+        <div><h2>Контакти</h2><a href="tel:+380552238768"><svg><use href="#i-phone" /></svg>(0552) 23-87-68</a><a href="mailto:school24@example.org"><svg><use href="#i-mail" /></svg>school24@example.org</a><span><svg><use href="#i-pin" /></svg>Херсон, Україна</span></div>
+      </div>
+      <div class="shell footer-bottom"><span>© 2022 Херсонська спеціалізована школа №24</span><span>Навчальний прототип інтерфейсу</span></div>
+    </footer>
+
+    <dialog class="search-dialog" id="search-dialog">
+      <button class="dialog-backdrop" type="button" data-close-search aria-label="Закрити пошук"></button>
+      <div class="search-panel">
+        <div class="search-head"><div><small>Пошук на сайті</small><h2>Що ви шукаєте?</h2></div><button class="icon-button" type="button" data-close-search aria-label="Закрити пошук"><svg><use href="#i-x" /></svg></button></div>
+        <label class="search-field"><svg><use href="#i-search" /></svg><input id="search-input" type="search" placeholder="Наприклад, правила прийому" autocomplete="off" /><kbd>Esc</kbd></label>
+        <div class="search-suggestions"><span>Популярні розділи:</span><a href="#documents" data-route="documents">Документи</a><a href="#education" data-route="education">Розклад</a><a href="#contacts" data-route="contacts">Контакти</a></div>
+      </div>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
