@@ -10,6 +10,7 @@ A responsive, front-end-only redesign concept for the Kherson Specialized School
 - long homepage content replaced by summaries and focused subpages;
 - responsive layout for desktop, tablet, and mobile;
 - accessible labels, keyboard focus, semantic landmarks, and reduced-motion support;
+- complete Ukrainian and English interface with a persistent language switcher;
 - local copies of the original school emblem and building photographs.
 
 ## Run locally
